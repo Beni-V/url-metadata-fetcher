@@ -1,8 +1,8 @@
 const express = require('express');
 const helmet = require('helmet');
 const path = require('path');
-const metadataController = require('../controllers/metadataController');
-const rateLimiter = require('../utils/rateLimiter');
+const metadataController = require('../src/controllers/metadataController');
+const rateLimiter = require('../src/utils/rateLimiter');
 
 const app = express();
 
@@ -15,9 +15,9 @@ app.set('trust proxy', 1)
 
 
 
-app.post('/fetch_metadata', metadataController.fetchMetadata);
+app.post('/api/fetch_metadata', metadataController.fetchMetadata);
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../public', 'index.html'));
+    res.sendFile(path.resolve(__dirname, '../public', 'index2.html'));
 });
 
 const PORT = process.env.PORT || 8000;
