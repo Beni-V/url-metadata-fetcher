@@ -12,7 +12,7 @@ const useFetchMetadata = () => {
         setMetadata([]);
 
         try {
-            const response = await axios.post('/fetch-metadata', { urls });
+            const response = await axios.post('/fetch_metadata', { urls });
             setMetadata(response.data);
         } catch (err) {
             setError('Error fetching metadata');
