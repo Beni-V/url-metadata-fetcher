@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "keywords": [],
-  "scripts": {},
+  "scripts": {
+    "build": "cd ../frontend && npm install && ../backend && npx webpack"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
