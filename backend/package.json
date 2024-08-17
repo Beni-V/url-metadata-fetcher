@@ -5,8 +5,10 @@
   "main": "index.js",
   "keywords": [],
   "scripts": {
-    "build": "cd ../frontend && npm install && cd ../backend && npx webpack",
-    "start": "node src/app.js"
+    "start": "node src/app.js",
+    "install-frontend": "cd ../frontend && npm install",
+    "build-backend": "cd ../backend && npx webpack",
+    "vercel-build": "npm run install-frontend && npm run build-backend && npm run build"
   },
   "author": "",
   "license": "ISC",
