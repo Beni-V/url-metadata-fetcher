@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "keywords": [],
+  "scripts": {
+    "build": "npx webpack"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
