@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const app = require('./app');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 80;
 
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, '../public')));

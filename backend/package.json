@@ -5,8 +5,8 @@
   "main": "index.js",
   "keywords": [],
   "scripts": {
-    "prebuild": "cd ../frontend && npm install",
-    "build": "npx webpack"
+    "build": "cd ../frontend && npm install && cd ../backend && npx webpack",
+    "start": "node src/server.js"
   },
   "author": "",
   "license": "ISC",
