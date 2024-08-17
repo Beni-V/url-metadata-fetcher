@@ -4,12 +4,7 @@
   "description": "",
   "main": "index.js",
   "keywords": [],
-  "scripts": {
-    "start": "node src/app.js",
-    "install-frontend": "cd ../frontend && npm install",
-    "build-backend": "cd ../backend && npx webpack",
-    "vercel-build": "npm run install-frontend && npm run build-backend && npm run build"
-  },
+  "scripts": {},
   "author": "",
   "license": "ISC",
   "devDependencies": {
