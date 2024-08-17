@@ -5,6 +5,7 @@
   "main": "index.js",
   "keywords": [],
   "scripts": {
+    "prebuild": "cd ../frontend && npm install",
     "build": "npx webpack"
   },
   "author": "",
