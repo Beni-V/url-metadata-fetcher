@@ -6,7 +6,7 @@
   "keywords": [],
   "scripts": {
     "build": "cd ../frontend && npm install && cd ../backend && npx webpack",
-    "start": "node src/server.js"
+    "start": "node src/app.js"
   },
   "author": "",
   "license": "ISC",

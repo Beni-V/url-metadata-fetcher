@@ -14,7 +14,7 @@ app.set('trust proxy', 1)
 
 app.post('/fetch-metadata', metadataController.fetchMetadata);
 
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 8000;
 
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, '../public')));
