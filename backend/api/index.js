@@ -17,7 +17,7 @@ app.set('trust proxy', 1)
 
 app.post('/api/fetch_metadata', metadataController.fetchMetadata);
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../public', 'index2.html'));
+    res.sendFile(path.resolve(__dirname, '../public', 'index.html'));
 });
 
 const PORT = process.env.PORT || 8000;
